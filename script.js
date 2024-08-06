@@ -1,9 +1,11 @@
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
+    const header = document.querySelector('header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition   
+ >= 100) { // Ajusta el valor según tu preferencia
         header.classList.add('scrolled');
     } else {
-        header.classList.remove('scrolled');   
-
+        header.classList.remove('scrolled');
     }
 });
-// Aquí irá el código JavaScript para el menú y otras interacciones
