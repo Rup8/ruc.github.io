@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi   
- Portafolio</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>   
+    <header>  
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -21,14 +20,121 @@
             </div>
 
     </header>
+<section id="inicio">
+  <div class="container">
+    <div class="foto">
+      <img src="tu-foto.jpg" alt="Foto_introductoria">
+    </div>
+    <div class="texto">
+      <h2>Hola, soy Rubén</h2>
+      <p>
+        "Soy un desarrollador en constante evolución, buscando nuevos desafíos en el mundo IT. Mi experiencia en lenguajes como C#, Java y Python, combinada con mi pasión por el diseño, me permite crear soluciones innovadoras y eficientes. ¿Quieres trabajar juntos en el próximo gran proyecto? ¡Conéctate conmigo!"
+      </p>
+    </div>
+  </div>
+</section>
+ <section id="proyectos">
+
+  <h2>Mis Proyectos</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+      <div class="project-cell">
+      <div class="card-front">
+        <img src="images/api-tiempo.jpg" alt="API del tiempo">
+        <h3>API del tiempo.</h3>
+      </div>
+      <div class="card-back">
+        <p>API para obtener información del clima</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="project-card">
+      <div class="project-cell">
+      <div class="card-front">
+        <img src="images/app-finanzas.jpg" alt="App finanzas">
+        <h3>App de finanzas personales.</h3>
+      </div>
+      <div class="card-back">
+        <p>App para controlar tus finanzas</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="project-card">
+      <div class="project-cell">
+      <div class="card-front">
+        <img src="images/api-auth.jpg" alt="API de autenticación">
+        <h3>API de autenticación.</h3>
+      </div>
+      <div class="card-back">
+        <p>API para autenticar al usuario</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="project-card">
+      <div class="project-cell">
+      <div class="card-front">
+        <img src="images/chatbot.jpg" alt="Chatbot">
+        <h3>Chatbot.</h3>
+      </div>
+      <div class="card-back">
+        <p>Chatbot para e-commerce</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="project-card">
+      <div class="project-cell">
+      <div class="card-front">
+        <img src="images/proyecto-collab.jpg" alt="Proyecto colaborativo">
+        <h3>Proyecto colaborativo.</h3>
+      </div>
+      <div class="card-back">
+        <p>Proyecto colaborativo de estudiantes</p>
+      </div>
+      </div>
+      </div>
+  </section>
 
     <section id="acerca-de-mi">
+      
+  <h2>Acerca de mí</h2>
+  <div class="container">
+    <div class="foto">
+      <img src="tu-foto.jpg" alt="Tu nombre">
+    </div>
+    <div class="texto">
+      <p>Soy Rubén, un apasionado del desarrollo web. Con 0 años de experiencia en la industria, he tenido la oportunidad de trabajar en diversos proyectos, desde pequeñas páginas web hasta aplicaciones web complejas. Mi pasión por la tecnología me impulsa a estar siempre al día con las últimas tendencias y herramientas.</p>
+      <p>En mi tiempo libre, disfruto de leyendo, jugando a videojuegos y pasando tiempo en familia. Creo firmemente que un buen desarrollador debe tener una mente creativa y una sólida base técnica. Me encanta encontrar soluciones innovadoras a los problemas y crear experiencias de usuario excepcionales.</p>
+      <p>Mis habilidades incluyen: HTML, CSS, JavaScript, React, Node.js, y bases de datos como MongoDB y PostgreSQL. Estoy siempre dispuesto a aprender nuevas tecnologías y a colaborar en proyectos desafiantes.</p>
+    </div>
+  </div>
         </section>
 
-    <section id="proyectos">
-        </section>
-
+   
     <section id="contacto">
+      <h2>Contacto</h2>
+    <div class="container">
+        <form action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required> 
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label> 
+
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button 
+            id="submit">Enviar</button>
+        </form>
+        <div class="redes-sociales">
+            <a href="https://www.linkedin.com/in/rupcarpad" 
+ target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Rup8" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+    </div>
         </section>
 
     <script src="script.js"></script>
