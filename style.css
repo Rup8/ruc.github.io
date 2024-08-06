@@ -1,56 +1,207 @@
-/* Colores */
+/* 1. Estilos generales */
+
 body {
-    background-color: #EAF2E3;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.section-title {
+  color:#30C5FF;
+}
+/*Titulos y encabezados*/
+h1,h2,h3 {
+font-family: 'Roboto',sans-serif; /*Fuente display para titulos*/
+font-weight: bold;
 }
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* 2. Estilos del header */
 
-/* Estilos para cada sección */
-#acerca-de-mi {
-    /* Estilos específicos para esta sección */
-}
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    transition: all 0.3s ease-in-out;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #42454B;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 999;
+transition: all 0.3s ease-in-out;
+text-align: center;
+
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+list-style: none;
+display: flex;
+justify-content: right;
+align-items: center;
 }
 
 nav li a {
-    text-decoration: none;
-    color: #594236;
-    padding: 15px;
+text-decoration: none;
+color: #30C5FF;
+padding: 15px;
+}
+nav li a:hover {
+  border-radius: 10px;
+  background-color: #A0DDE6;
+ /* Tono más claro del color principal */
 }
 
-.logo {
-    /* Estilos para tu logo */
+nav li.active a {
+  font-weight: bold;
+   color: #2A2D34;
 }
+/* 3. Estilos para cada sección */
+#inicio,
+#proyectos,
+#acerca-de-mi,
+#contacto {
+padding: 20px;
+}
+#inicio {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 50px;
+background-color: #2A2D34;
+color: #A0DDE6;
+}
+
+.foto img {
+position: left;
+width: 300px; /* Ajusta el ancho según tu preferencia */
+border-radius: 50%;
+}
+
+.texto {
+text-align: right;
+width: 50%;
+}
+
+/* Responsividad (opcional): */
+@media (max-width: 768px) {
+#inicio {
+flex-direction: row;
+align-items: flex-start;
+}
+.foto {
+margin-bottom: 20px;
+}
+}
+#proyectos {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #A0DDE6;
+color: #2A2D34;
+}
+.project-gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+}
+.project_cell {
+border:1px solid #ccc;
+padding: 10px;
+transition: transform 0.2s;
+}
+.project_cell:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project-card {
+perspective: 1000px;
+cursor: pointer;
+background-color: #80C2AF;
+border-radius: 5%;
+border-color: #42454B;
+text-align: center;
+
+}
+
+.card-front, .card-back {
+backface-visibility: hidden;
+transition: transform 0.5s;
+}
+
+.card-front {
+transform: rotateY(0deg);
+}
+
+.project-card:hover .card-front {
+transform: rotateY(-180deg);
+}
+
+.project-card:hover .card-back {
+transform: rotateY(0deg);
+}
+
+#acerca-de-mi {
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #2A2D34;
+color: #A0DDE6;
+}
+.foto{
+  
+  background-color: #30C5FF;
+}
+
+#contacto {
+background-color: #A0DDE6;
+orientation: center;
+color: #2A2D34;
+}
+#contacto form {
+border-radius: 10px;
+width: 50%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+
+}
+#submit {
+  background-color: #30C5FF;
+  border-radius: 10px;
+  border-color: #2A2D34;
+}
+
+
+.redes-sociales {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.redes-sociales a {
+margin: 0 10px;
+font-size: 24px;
+color: #2A2D34;
+text-overflow: ellipsis;
+}
+
+.foto img {
+width: 200px;
+border-radius: 50%;
+}
+
+.texto {
+text-align: justify;
+}
+
+/* 4. Efecto Scrolled */
+
 .scrolled {
-    background-color: #5DC1B9;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+background-color: #5DC1B9;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .scrolled nav ul {
-    display: none;
+display: none;
 }
 
 .scrolled nav ul.show {
-    display: flex;
+display: flex;
 }
-/* ... y así para cada sección */
